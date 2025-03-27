@@ -1,16 +1,17 @@
 # My Course Addition
 
-1. Remember device name, e.g. "Bangle.js f415"
-2. Connect to smart watch through https://www.espruino.com/ide/#
-3. Connect with the icon on the top left (you won't need to connect through your operating system)
-4. Upload to storage (database symbol) sensible-icon.js and sensible_settings.json
-5. Open sensible.js and "Send to Espruino" (RAM)
-6. Activate all the desired features (Heart rate and Accelerometer activated by default)
-7. Disconnect from the watch in order to use the python scanner in the next step
-8. In the script bangle_scanner.py, change device name to the corresponding one
-9. Check that CHARACTERISTIC_UUID is correct (e.g., nRF Connect app on iPhone)
-10. Select in notification_handler the data to be printed or stored
-11. Remember that the bangle watch only allows one concurrent connection! sometime computer / phone BT restart is necessary
+1. Charging: Looking from the top at the screen, the cable must exit on the right side
+2. Remember the device name, e.g. "Bangle.js f415"
+3. Connect to smart watch through https://www.espruino.com/ide/#
+4. Connect with the icon on the top left (you won't need to connect through your operating system)
+5. Upload to storage (database symbol) sensible-icon.js and sensible_settings.json
+6. Open sensible.js and "Send to Espruino" (RAM)
+7. Activate all the desired features (Heart rate and Accelerometer activated by default)
+8. Disconnect from the watch in order to use the python scanner in the next step
+9. In the script bangle_scanner.py, change device name to the corresponding one
+10. Check that CHARACTERISTIC_UUID is correct (e.g., nRF Connect app on iPhone)
+11. Select in notification_handler the data to be printed or stored
+12. Remember that the bangle watch only allows one concurrent connection! sometime computer / phone BT restart is necessary
 
 
 # Sensible
