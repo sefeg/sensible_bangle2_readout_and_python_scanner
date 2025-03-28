@@ -23,9 +23,11 @@ async def notification_handler(sender, data):
             #    print(line)
             if "BPM:" in line:
                 print(line)
-
+                
+                windows_compatible_timestamp = date_time_started.replace(':','_')
+                
                 if WRITE_HEART_RATE_TO_FILE:
-                    with open('heart_rate_' + date_time_started + '.csv', 'a', newline='') as csvfile:
+                    with open('heart_rate_' + windows_compatible_timestamp + '.csv', 'a', newline='') as csvfile:
                         hrm_writer = csv.writer(csvfile, delimiter=' ',
                             quotechar='|', quoting=csv.QUOTE_MINIMAL)
                         hrm_writer.writerow(datetime.datetime.now().strftime("%m/%d/%Y %H:%M:%S") + " -- " + line.split(":")[1].strip())
